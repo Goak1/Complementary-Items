@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "complementarymod",
+	"version": "${version}",
+	"name": "Complementary Items",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"V. Dias"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/complementary-items/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.goak.complementarymod.ComplementaryItems"
+		],
+		"fabric-datagen": [
+			"net.goak.complementarymod.ComplementaryItemsDataGenerator"
+		],
+		"client":[
+			"net.goak.complementarymod.ComplementaryModClient"
+
+		],
+		"server": [],
+		"fabric-gametest": [],
+		"preLaunch": []
+	},
+	"mixins": [
+		"complementarymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
