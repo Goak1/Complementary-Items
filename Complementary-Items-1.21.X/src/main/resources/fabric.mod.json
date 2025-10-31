@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "complementarymod",
-	"version": "${version}",
+	"version": "${0}",
 	"name": "Complementary Items",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/complementary-items/icon.png",
+	"icon": "assets/complementarymod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [

@@ -1,5 +1,4 @@
 package net.goak.complementarymod.Item;
-
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.goak.complementarymod.ComplementaryItems;
 import net.minecraft.item.Item;
@@ -26,7 +25,13 @@ public class ModItems {
 
     // Method for registering items and adding them to creative tabs
     public static void registerModItems() {
-        ComplementaryItems.LOGGER.info("Registering Mod Items for " + ComplementaryItems.MOD_ID);
+        ComplementaryItems.LOGGER.info("=== LETTUCE DEBUG START ===");
+        ComplementaryItems.LOGGER.info("MOD_ID: " + ComplementaryItems.MOD_ID);
+        ComplementaryItems.LOGGER.info("LETTUCE registered as: " + Registries.ITEM.getId(LETTUCE));
+        ComplementaryItems.LOGGER.info("Expected texture path: complementarymod:item/lettuce");
+        ComplementaryItems.LOGGER.info("Expected model path: assets/complementarymod/models/item/lettuce.json");
+        ComplementaryItems.LOGGER.info("Expected texture path: assets/complementarymod/textures/item/lettuce.png");
+        ComplementaryItems.LOGGER.info("=== LETTUCE DEBUG END ===");
 
         // Add the custom item(s) to the creative item groups
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
